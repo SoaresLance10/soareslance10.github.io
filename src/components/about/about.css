@@ -1,0 +1,287 @@
+.about {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.aImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 80%;
+  width: max-content;
+}
+
+.aImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.aSection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aTitle {
+  margin-top: 50px;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: var(--font1);
+  line-height: 50px;
+}
+
+.aSubTitle {
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--c1);
+  font-family: var(--font2);
+}
+
+.aSummary {
+  width: 60%;
+}
+
+.aboutMe {
+  font-size: 35px;
+  font-family: var(--font1);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.aSummary p {
+  font-size: 18px;
+  color: var(--c1);
+}
+
+.scroll {
+  margin-bottom: 50px;
+  width: max-content;
+}
+
+.aSection.right {
+  align-items: end;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background-color: var(--c2);
+  border-bottom-right-radius: 16px;
+}
+
+.social a {
+  margin: 5px 0;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+
+.social a:hover {
+  color: var(--c0);
+}
+
+.socialTextCont {
+  width: 20px;
+  height: 20px;
+}
+
+.socialText {
+  background-color: var(--c0);
+  font-size: 12px;
+  color: var(--c4);
+  width: max-content;
+  height: 100%;
+  rotate: 90deg;
+  transform-origin: left top;
+  transform: translateY(-20px);
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+}
+
+.typeWriter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.typeCnst {
+  font-size: 25px;
+}
+
+.typed {
+  font-family: var(--font1);
+  font-size: 35px;
+  font-weight: 800;
+  color: var(--c2);
+  padding: 5px 0;
+}
+
+.contactLink {
+  margin-bottom: 30px;
+}
+
+.contactButton {
+  position: relative;
+}
+
+.circleText {
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+@media (max-width: 1536px) {
+  .aTitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .bg {
+    height: 80%;
+    top: auto;
+    bottom: 0;
+  }
+  .aImg {
+    height: 100%;
+  }
+
+  .aSummary p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bg {
+    height: 70%;
+  }
+
+  .aTitle {
+    font-size: 40px;
+  }
+
+  .aSubTitle {
+    font-size: 30px;
+  }
+
+  .typeWriter {
+    width: 60%;
+  }
+
+  .typeCnst {
+    font-size: 22px;
+  }
+
+  .typed {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .aSection {
+    width: 100%;
+  }
+
+  .aTitle {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .aSubTitle {
+    font-size: 28px;
+  }
+
+  .aSection.left {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .aSection.right {
+    justify-content: end;
+  }
+
+  .aSummary {
+    width: 100%;
+  }
+
+  .aboutMe,
+  .scroll,
+  .social {
+    display: none;
+  }
+
+  .aSummary p {
+    margin-top: -200px;
+  }
+
+  .typeWriter {
+    width: 100%;
+  }
+
+  .contactLink svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .arrow {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .aTitle {
+    font-size: 30px;
+  }
+
+  .aSubTitle {
+    font-size: 22px;
+  }
+
+  .aSummary p {
+    font-size: 13px;
+  }
+  .aImg {
+    width: 400px;
+  }
+}

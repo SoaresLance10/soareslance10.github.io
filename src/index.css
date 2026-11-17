@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yeseva+One&display=swap");
+
+:root {
+  --c0: #22223bff;
+  --c1: #4a4e69ff;
+  --c2: #9a8c98ff;
+  --c3: #c9ada7ff;
+  --c4: #f2e9e4ff;
+
+  --font1: "Yeseva One", serif;
+  --font2: "Josefin Sans", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c4);
+  color: var(--c0);
+  font-family: var(--font2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--c4);
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.container {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

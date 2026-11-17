@@ -1,0 +1,204 @@
+.project {
+  height: 600vh;
+  position: relative;
+}
+
+.pList {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  width: max-content;
+}
+
+.pItem {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.pProgress {
+  position: sticky;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  bottom: 85%;
+}
+.projHead {
+  padding-left: 100px;
+  bottom: 85%;
+  position: sticky;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: var(--font1);
+  line-height: 45px;
+  color: var(--c0);
+}
+
+.projHead span {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--font2);
+  color: var(--c2);
+}
+
+.pImg {
+  width: 40%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.pImg:hover {
+  cursor: pointer;
+}
+
+.pImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pText {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pText h1 {
+  font-size: 38px;
+  font-family: var(--font1);
+}
+
+.pText p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.bullets {
+  font-size: 15px;
+}
+.bullets li {
+  margin-bottom: 3px;
+}
+
+.skill {
+  font-size: 10px;
+  background-color: var(--c3);
+  width: max-content;
+  padding: 3px 7px;
+  border-radius: 6px;
+  margin: 2px 5px 0 0;
+  display: inline-flex;
+}
+
+.pText button {
+  background-color: var(--c1);
+  color: var(--c4);
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.projBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.projBtn:hover {
+  background-color: #333648;
+}
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  margin-top: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 12px;
+}
+.tooltip-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1536px) {
+  .pItem {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .pText h1 {
+    font-size: 30px;
+  }
+  .pText p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pItem {
+    padding: 150px 0 30px 0;
+    flex-direction: column;
+  }
+
+  .projHead {
+    padding-left: 20px;
+    bottom: 85%;
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .projHead span {
+    font-size: 30px;
+  }
+
+  .pImg,
+  .pText {
+    width: 80%;
+  }
+
+  .pProgress {
+    bottom: 30px;
+    left: 100%;
+    width: 60px;
+    height: 60px;
+  }
+  .pText h1 {
+    font-size: 27px;
+  }
+
+  .pText p {
+    font-size: 15px;
+  }
+
+  .bullets {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .pProgress {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+  }
+}

@@ -1,0 +1,100 @@
+.exp {
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.exp::-webkit-scrollbar {
+  display: none;
+}
+
+.myTimeline {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.expHead {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: var(--font1);
+  line-height: 45px;
+  color: var(--c0);
+}
+
+.expHead span {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--font2);
+  color: var(--c2);
+}
+
+.vertical-timeline-element-content {
+  box-shadow:
+    0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.vertical-timeline-element-title {
+  font-family: var(--font1);
+}
+.vertical-timeline-element-subtitle {
+  margin-top: 0.5em !important;
+  font-weight: 400 !important;
+}
+.vertical-timeline-element-role {
+  font-size: 16px;
+  color: var(--c1) !important;
+  margin-top: 1em !important;
+}
+
+.date {
+  color: var(--c0) !important;
+}
+
+#description {
+  margin: 0.4em 0 1em 0;
+  font-size: 14px !important;
+  line-height: 17px !important;
+}
+
+.techStack {
+  margin-top: 1em;
+}
+
+.skill {
+  font-size: 10px;
+  background-color: var(--c3);
+  width: max-content;
+  padding: 3px 7px;
+  border-radius: 6px;
+  margin: 2px 5px 0 0;
+  display: inline-flex;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--c1);
+}
+
+.btn:hover {
+  background-color: var(--c0);
+}
+
+@media (max-width: 1170px) {
+  .expHead {
+    text-align: left;
+    padding-left: 40px;
+  }
+}

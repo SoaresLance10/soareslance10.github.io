@@ -1,0 +1,340 @@
+.certi {
+  height: 100%;
+  overflow: hidden;
+}
+
+.certiHead {
+  padding: 40px 0 20px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: var(--font1);
+  line-height: 45px;
+  color: var(--c0);
+}
+
+.certiHead span {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var(--font2);
+  color: var(--c2);
+}
+
+.bcontainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  height: 80%;
+  padding: 0 20px;
+  align-items: stretch;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+  /* background-color: var(--c0); */
+}
+.c1 {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  height: 20%;
+  overflow: hidden;
+}
+.cardText {
+  flex: 0 0 max-content;
+  padding: 16px;
+  background-color: var(--c0);
+}
+.cardText h1 {
+  font-family: var(--font1);
+  font-size: 22px;
+  color: var(--c3);
+}
+.cardText h3 {
+  font-size: 16px;
+  color: var(--c2);
+  padding-top: 5px;
+}
+.techCar {
+  flex: 1;
+  border-radius: 0 12px 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.techSkillCont {
+  color: var(--c4);
+  background-color: var(--c0);
+  padding: 8px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  border-radius: 50%;
+}
+.c4 {
+  height: calc(40% - 20px);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: var(--c0);
+}
+.resText {
+  padding: 10px 0;
+  font-size: 20px;
+  width: 40%;
+  color: var(--c2);
+}
+.resText span {
+  color: var(--c4);
+  font-size: 30px;
+  font-family: var(--font1);
+}
+.resIconI {
+  color: var(--c2);
+  transition: color 0.2s ease-in-out;
+}
+.resIconI:hover {
+  color: white;
+}
+.resCont {
+  width: 50%;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.resBtn {
+  display: inline-block;
+  position: relative;
+  width: 100%; /* Ensures the button fills the container */
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+}
+
+.imgContainer img {
+  width: 100%; /* Makes the image responsive */
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4a4e6991; /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 8px; /* Matches image rounding */
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+.imgContainer:hover img {
+  transform: scale(1.3);
+}
+
+.icon {
+  color: white;
+  font-size: 40px; /* Adjust icon size */
+}
+.resIcon {
+  padding: 10px 0;
+  color: var(--c2);
+}
+
+.c3 {
+  height: 53%;
+}
+
+.c2 {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5d3cf;
+}
+.webCertHead {
+  font-family: var(--font1);
+  font-size: 20px;
+  height: 20%;
+}
+.certCaroCont {
+  display: block;
+  width: 100%;
+  border: none;
+  background: url("/certi.png") center/contain no-repeat;
+  height: 80%;
+  border-radius: 16px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+.certCaroCont:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.empty {
+  visibility: hidden;
+}
+.c3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #808399;
+}
+
+.skillRow {
+  display: flex;
+  background-color: #4a4e69;
+  font-size: 18px;
+  color: var(--c4);
+  justify-content: space-between; /* Aligns content */
+  align-items: center; /* Centers content vertically */
+  flex: 1; /* Makes each row take up equal height */
+  width: 100%; /* Ensures full width */
+  padding: 5px 15px;
+  margin: 5px 0;
+  border-radius: 12px;
+}
+
+.skillRow:last-child {
+  border-bottom: none; /* Removes border for last row */
+}
+.skillHead {
+  font-weight: 600;
+}
+
+.skillExp {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  width: 50%;
+  text-align: right; /* Aligns experience text to the right */
+}
+.nope {
+  color: #7e8191;
+}
+
+@media (max-width: 1024px) {
+  .resText {
+    font-size: 15px;
+  }
+  .skillRow {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+  }
+  .skillHead {
+    font-size: 14px;
+  }
+  .techSkillCont {
+    padding: 3px;
+  }
+}
+@media (max-width: 768px) {
+  .certCaroCont {
+    background: url("/certi2.png") center/contain no-repeat;
+  }
+  .resText {
+    font-size: 12px;
+  }
+  .skillRow {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .bcontainer {
+    flex-direction: column;
+  }
+
+  .column {
+    margin: 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  .c1 {
+    height: 70%;
+  }
+
+  .skillRow {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    height: 20px;
+  }
+  .cardText {
+    display: none;
+  }
+  .certCaroCont {
+    background: url("/certi3.png") center/contain no-repeat;
+  }
+  .c2 {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+  }
+  .webCertHead,
+  .certCaroCont {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+  .webCertHead {
+    font-size: 16px;
+  }
+  .webCertHead h1 {
+    padding: 0 16px;
+  }
+
+  .resText {
+    font-size: 16px;
+  }
+
+  .skillHead {
+    font-size: 18px;
+  }
+  .c3 {
+    margin-top: -18px;
+    padding: 10px;
+  }
+  .hide2 {
+    display: none;
+  }
+  .techCar {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1280px) {
+  .hide1 {
+    display: none;
+  }
+}
